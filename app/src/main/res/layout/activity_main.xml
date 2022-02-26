@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+  <ImageButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/settingBtn"
+      android:src="@drawable/ic_outline_settings_24"
+      android:background="@android:color/transparent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="16dp"
+      android:layout_marginTop="16dp" />
+
+
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/username"
+      android:text="wrong_coded"
+      android:fontFamily="@font/poppins_medium"
+      android:textColor="@android:color/black"
+      app:layout_constraintBottom_toBottomOf="@id/settingBtn"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textSize="20sp" />
+
+  <ImageButton
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/menuBtn"
+      android:src="@drawable/ic_baseline_menu_24"
+      android:background="@android:color/transparent"
+      app:layout_constraintTop_toTopOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:layout_marginEnd="16dp"
+      android:layout_marginTop="16dp" />
+
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="8dp"
+      android:layout_marginTop="16dp"
+      app:layout_constraintTop_toBottomOf="@id/settingBtn"
+      android:gravity="center"
+      android:id="@+id/topPanel">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:gravity="center_horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/followers"
+          android:text="6"
+          android:fontFamily="@font/poppins_medium"
+          android:textColor="@android:color/black"
+          android:textSize="20sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Followers"
+          android:textColor="@android:color/darker_gray"
+          android:textSize="16sp" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="72dp"
+      android:id="@+id/profilePic"
+      android:src="@drawable/ic_outline_settings_24"
+      android:layout_marginStart="16dp"
+      android:layout_marginEnd="16dp"
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:id="@+id/following"
+          android:text="1.02m"
+          android:fontFamily="@font/poppins_medium"
+          android:textColor="@android:color/black"
+          android:textSize="20sp" />
+
+      <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Following"
+          android:textColor="@android:color/darker_gray"
+          android:textSize="16sp" />
+
+    </LinearLayout>
+
+  </LinearLayout>
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/name"
+      android:text="Aditya Rana | Student"
+      android:fontFamily="@font/poppins_medium"
+      android:textColor="@android:color/black"
+      android:layout_marginTop="16dp"
+      app:layout_constraintTop_toBottomOf="@id/topPanel"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textSize="20sp" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/tag_state_description"
+      android:text="@string/desc"
+      android:textColor="@android:color/darker_gray"
+      android:textAlignment="center"
+      android:padding="16dp"
+      app:layout_constraintTop_toBottomOf="@id/name"
+      app:layout_constraintStart_toStartOf="parent"
+      app:layout_constraintEnd_toEndOf="parent"
+      android:textSize="14sp" />
+
+
+  <com.google.android.material.button.MaterialButton
+      android:id="@+id/btnEdit"
+      style="@style/Widget.MaterialComponents.Button.TextButton"
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:backgroundTint="#1A4FD0FF"
+      android:elevation="0dp"
+      android:fontFamily="@font/poppins_medium"
+      android:padding="12dp"
+      android:text="Edit Profile"
+      android:textAllCaps="false"
+      android:textColor="@android:color/black"
+      app:layout_constraintEnd_toStartOf="@+id/btnAnalytics"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="8dp"
+      app:cornerRadius="4dp"
+      android:layout_marginEnd="16dp"
+      app:layout_constraintTop_toBottomOf="@id/tag_state_description" />
+
+  <com.google.android.material.button.MaterialButton
+      android:layout_width="0dp"
+      android:layout_height="wrap_content"
+      android:padding="12dp"
+      android:text="Analytics"
+      style="@style/Widget.MaterialComponents.Button.TextButton"
+      app:cornerRadius="4dp"
+      android:textColor="@android:color/white"
+      android:fontFamily="@font/poppins_medium"
+      android:textAllCaps="false"
+      android:elevation="0dp"
+      android:backgroundTint="#00BBFF"
+      app:layout_constraintEnd_toEndOf="parent"
+      app:layout_constraintStart_toEndOf="@id/btnEdit"
+      android:layout_marginStart="8dp"
+      android:layout_marginEnd="16dp"
+      android:id="@+id/btnAnalytics"
+      app:layout_constraintTop_toBottomOf="@id/tag_state_description" />
+
+  <TextView
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:id="@+id/hText"
+      android:text="Highlights"
+      android:fontFamily="@font/poppins_medium"
+      android:textColor="@android:color/darker_gray"
+      android:layout_marginTop="16dp"
+      app:layout_constraintTop_toBottomOf="@id/btnEdit"
+      app:layout_constraintStart_toStartOf="parent"
+      android:layout_marginStart="16dp"
+      android:textSize="16sp" />
+
+  <androidx.recyclerview.widget.RecyclerView
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@id/hText"
+      android:id="@+id/highLightRV"
+    android:padding="16dp"
+    android:clipToPadding="false"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

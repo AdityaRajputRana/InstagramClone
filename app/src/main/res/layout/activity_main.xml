@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".MainActivity">
 
   <ImageButton
       android:layout_width="wrap_content"
       android:layout_height="wrap_content"
+      android:tint="@android:color/darker_gray"
       android:id="@+id/settingBtn"
       android:src="@drawable/ic_outline_settings_24"
       android:background="@android:color/transparent"
@@ -36,6 +38,7 @@
       android:layout_height="wrap_content"
       android:id="@+id/menuBtn"
       android:src="@drawable/ic_baseline_menu_24"
+      android:tint="@android:color/darker_gray"
       android:background="@android:color/transparent"
       app:layout_constraintTop_toTopOf="parent"
       app:layout_constraintEnd_toEndOf="parent"
@@ -81,9 +84,9 @@
         android:layout_width="64dp"
         android:layout_height="72dp"
       android:id="@+id/profilePic"
-      android:src="@drawable/ic_outline_settings_24"
+      android:src="@drawable/img_insta"
       android:layout_marginStart="16dp"
-      android:layout_marginEnd="16dp"
+      android:layout_marginEnd="16dp" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -195,7 +198,7 @@
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintTop_toBottomOf="@id/hText"
       android:id="@+id/highLightRV"
-    android:padding="16dp"
+
     android:clipToPadding="false"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
